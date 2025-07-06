@@ -832,7 +832,7 @@ function CryptoSwapBox() {
       }));
       setTimeout(
         () => setSwapState((p) => ({ ...p, status: "idle" })),
-        2000
+        20000
       );
     } catch (e) {
       console.error(e);
