@@ -527,7 +527,11 @@ function CryptoSwapBox() {
       address: pubKey!,
       networkPassphrase: WalletNetwork.PUBLIC,
     });
-    await rpc.sendTransaction(signedTxXdr);
+    const tx = TransactionBuilder.fromXDR(
+      signedTxXdr,
+      Networks.PUBLIC
+    );
+    await rpc.sendTransaction(tx);
   }
 
 
