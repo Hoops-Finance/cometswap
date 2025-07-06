@@ -61,6 +61,6 @@ cmds = ["echo '→ Starting install phase…' && PC_DIRS=\"$(find /nix -type f \
 [phases.build]
 dependsOn = ["install"]
 cmds = [
-  "npm run build:mainnet"
+  "npm run build"
 ]
 # ───────────────────────────────────────────────────────────────────────────────
