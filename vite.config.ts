@@ -6,7 +6,8 @@ import path from "path";
 export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
-    port: 8080,
+    port: 5175,
+    allowedHosts: ['comet.hoops.finance']
   },
   plugins: [
     react(),
